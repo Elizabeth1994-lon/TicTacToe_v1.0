@@ -20,6 +20,14 @@ determina si hay victoria o empate
 pide al humano que se mueva de nuevo o indica un empate o una victoria del robot
 Este conjunto de acciones continúa hasta que se completa el juego o el humano indica el deseo de abandonar.
 
+Requerimientos de la maquina
+para  el correcto funcionamiento del proyecto es necesario tener en python las siguientes librerias
+	*cv2: si no se cuenta con esta libreria se puede instalar con el comando pip install opencv-python
+	*serial: si no se cuenta con esta libreria se puede instalar con el comando pip install pyserial
+	*struct: si no se cuenta con esta libreria se puede instalar con el comando pip install supyr-struct
+	*time: si no se cuenta con esta libreria se puede instalar con el comando  pip install time-tools
+	*numpy: si no se cuenta con esta libreria se puede instalar con el comando  pip install numpy
+ 
 Archivos ejecutar con su resultado final
 Para poder llevar a cabo los pasos anteriores se hace necesario la utilizacion de tres archivos .py los cuales son:
   * Funciones_del_robot: en este archivo se encuentran las funciones con las cuales se podrá mover el robot, se inicializa el puerto serial, se inicializan los movimientos en x, y, z, y también velocidad, aceleración de los motores de cada articulación,
@@ -27,3 +35,5 @@ Para poder llevar a cabo los pasos anteriores se hace necesario la utilizacion d
   * identifique_jugador: por medio de este archivo, se hace el reconocimiento de imágenes, las áreas para dibujar el tablero digitalmente,se identifican los centroides de cada uno de las imágenes y el área del tablero en la que se encuentra, de esta manera nos indica , en qué posición del tablero de ha hecho alguna de las jugadas.
 
 Los archivos contienen los experimentos anteriores
+
+
