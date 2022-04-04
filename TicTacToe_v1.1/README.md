@@ -23,6 +23,14 @@ Interaction with the human is carried out through artificial vision. The main ad
 
 <i>This set of actions continues until the game is completed or the human indicates a desire to quit.</i>
 
+### machine requirements
+for the proper functioning of the project. It is necessary to have python and the following libraries:
+ *cv2: if this library is not available, it can be installed with the command pip install opencv-python
+ *serial: if this library is not available, it can be installed with the pip install pyserial command
+ *struct: if this library is not available, it can be installed with the command pip install supyr-struct
+ *time:if this library is not available, it can be installed with the pip install time
+ *numpyif this library is not available, it can be installed with the pip install numpy
+
 ## In order to carry out the previous steps, it is necessary to use three .py files, which are:
   * <b>Funciones_del_robot:</b> <br>In this file are the functions with which the robot can move, the serial port is initialized along with the movements in x, y, z. Also the speed and acceleration of the motors of each joint.
   * <b>Funciones_tres_en_raya:</b> <br>Through this file we find functions that will help us with the movement of the robot where it can validate if it is a winner or where it should make the next movement, as a validation method, the board will be created on the computer screen, the code of this function is also found in this file.
